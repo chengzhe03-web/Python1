@@ -54,6 +54,22 @@ class TodoApp:
         before = len(self.tasks)
         self.tasks = [t for t in self.tasks if not t.done]
         return before - len(self.tasks)
+    
+    def search(self, keyword: str) -> None:
+        keyword = keyword.strip().lower()
+        if not keyword:
+            print("Search keyword cannot be empty.")
+            return
+
+        matches = [t for t in self.tasks if keyword in t.title.lower()]
+        if not matches:
+            print("No matching tasks.")
+            return
+
+        for idx, t in enumerate(matches, start=1):
+            status = "✅" if t.done else "⬜"
+            print(f"{idx:>2}. {status} {t.title}")
+
 
 
 def print_help() -> None:
@@ -66,7 +82,8 @@ def print_help() -> None:
         "  rm <index>        Remove a task\n"
         "  clear-done        Remove all completed tasks\n"
         "  help              Show help\n"
-        "  quit              Exit\n"
+        "  quit              Exit the app\n"
+
     )
 
 

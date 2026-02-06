@@ -67,6 +67,11 @@ def print_help() -> None:
         "  clear-done        Remove all completed tasks\n"
         "  help              Show help\n"
         "  quit              Exit\n"
+        "\nTips:\n"
+        "  - Use 'list' often to see indexes\n"
+        "  - Titles can include spaces\n"
+        "  - Try: add Buy milk\n"
+
     )
 
 

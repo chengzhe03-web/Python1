@@ -82,7 +82,7 @@ def print_help() -> None:
         "  rm <index>        Remove a task\n"
         "  clear-done        Remove all completed tasks\n"
         "  help              Show help\n"
-        "  quit              Exit\n"
+        "  quit              Exit the app\n"
         "  search <keyword>  Search tasks by keyword\n"
 
     )

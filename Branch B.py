@@ -66,7 +66,7 @@ def print_help() -> None:
         "  rm <index>        Remove a task\n"
         "  clear-done        Remove all completed tasks\n"
         "  help              Show help\n"
-        "  quit              Exit\n"
+        "  quit              Close program\n"
         "\nTips:\n"
         "  - Use 'list' often to see indexes\n"
         "  - Titles can include spaces\n"

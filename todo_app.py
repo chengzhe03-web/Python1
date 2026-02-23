@@ -86,7 +86,7 @@ def print_help() -> None:
 
     )
 
-test
+testtest
 def main() -> None:
     app = TodoApp()
     print("Simple Todo App (type 'help' for commands)")
